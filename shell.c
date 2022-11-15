@@ -26,8 +26,14 @@ int main(__attribute__((unused)) int ac, __attribute__((unused)) char **av,
 		printf("$ ");
 		fflush(stdout);
 		lineReturn = getline(&line, &lineCap, stdin);
+		
 		if (lineReturn == ULONG_MAX)
 			break;
+
+/* The next line checks if the input is the enter key alone */
+		if (line[0] == '\n')
+			continue;
+
 		toks = populate(line, 0);
 		process(toks, env, &flag);
 		if (flag == 1)
