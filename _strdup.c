@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * _strdup - Return a pointer to a duplicated string
- * @s: The string to be duplicated
- *
- * Return: The address of a new string if succesful else
- * it returns NULL.
- */
+* _strdup -	Returns a pointer to a duplicated string
+* @s:		The string to be duplicated
+*
+* Return:	The address of a new string if succesful
+*			els it returns NULL.
+*/
+
 char *_strdup(char *s)
 {
 	char *str;

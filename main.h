@@ -20,4 +20,15 @@ char *pathfinder(char **env);
 void addPath(char **command, char **env, int *status);
 char *_strduppop(char *s);
 
+<<<<<<< HEAD
 #endif
+=======
+void _sprintf(char *str);
+int _printf(const char *format, ...);
+void _count(int *ptr, char *str);
+char *_itoa(int num);
+char *convert(int num, int base);
+char *_convert(int num, int base);
+
+#endif /* PRINTF_H */
+>>>>>>> 2ba4b1d19f77ae2e2ba764016cce22c0d8be400e

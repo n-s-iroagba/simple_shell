@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * pathfinder - finds the path varaible and enables it to run
- * @env: This is the environment varaible
- *
- * Return: The path string
- */
+* pathfinder -	Finds the path varaible and enables it to run
+* @env:			This is the environment varaible
+*
+* Return: The path string
+*/
 
 char *pathfinder(char **env)
 {

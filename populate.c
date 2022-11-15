@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * populate - This transforms the string to tokens
- * @s: The getline string
- * @type: 0 for commands, 1 for path
- *
- * Return: The array of string commands
- */
+* populate -	This function transforms strings into tokens
+* @s:			The getline string
+* @type:		0 for commands, 1 for path
+*
+* Return: The array of string commands
+*/
+
 char **populate(char *s, int type)
 {
 	int len = 1, counter = 0, i;
