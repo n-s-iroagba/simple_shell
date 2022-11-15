@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* convert -Converts numbers to a specific base
+* convert -	Converts numbers to a specific base
 * @num:		The number to be converted
-* @base:	The base of the number
-* Return:	converted number
+* @base:	The base the number should be converted into
+* Return:	The converted number
 */
 
 char *convert(int num, int base)

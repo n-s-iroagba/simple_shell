@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * main - The main shell program
- * @ac: The argument count
- * @av: The argument vector
- * @env: the environment variable
- *
- * Return: Always zero (0)
- */
+* main -	The main shell program
+* @ac:		The argument count
+* @av:		The argument vector
+* @env:		The environment variable
+*
+* Return:	Always zero (0)
+*/
 
 int main(__attribute__((unused)) int ac, __attribute__((unused)) char **av,
 		__attribute__((unused)) char **env)

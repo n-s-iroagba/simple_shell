@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * trim - Removes whitespace from both sides of a string
- *
- * @s: input string
- *
- * Return: The new trimmed string
- */
+* trim -	Removes whitespace from both sides of a string
+*
+* @s:		Input string
+*
+* Return:	The new trimmed string
+*/
+
 char *trim(char *s)
 {
 	int len = 0, i, actual = 0;

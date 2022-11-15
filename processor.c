@@ -1,16 +1,17 @@
 #include "main.h"
 
 /**
- * process - Checks the text entered against some built-ins
- * like exit and env, then it redirects accordingly
- *
- * @toks: The token list of text entered;
- * @env: The environment var
- * @status: This determines whether or not the flow
- * will reach the execve function
- *
- * Return: Null  void
- */
+* process -	Checks the text entered against some built-ins
+*			commands like exit and env, then it redirects accordingly
+*
+* @toks:	The token list of text entered;
+* @env:		The environment var
+* @status:	This determines whether or not the flow
+*			will reach the exec function
+*
+* Return:	Returns nothing
+*/
+
 void process(char **toks, char **env __attribute__((unused)), int *status)
 {
 	int i;
@@ -40,15 +41,17 @@ void process(char **toks, char **env __attribute__((unused)), int *status)
 }
 
 /**
- * addPath - adds the full path of a command to the tokens before execution
- * @command: All command tokens, otherwise referred to as toks
- * some place else in this repo
- * @env: This is the environment var
- * @status: if the command is not found status will be reset to 0
- * so it never reaches the execve function in shell.c
- *
- * Return: Null void
- */
+* addPath -	Adds the full path of a command to the tokens before execution
+* @command: All command tokens, otherwise referred to as toks
+*			some place else in this repo
+*
+* @env:		This is the environment var
+* @status:	If the command is not found status will be reset to 0
+*			so it never reaches the execve function in shell.c
+*
+* Return: Null void
+*/
+
 void addPath(char **command, char **env, int *status)
 {
 	char *path;

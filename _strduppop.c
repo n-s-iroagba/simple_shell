@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * _strduppop - Return a pointer to a duplicated string
- * @s: The string to be duplicated
- *
- * Return: The address of a new string if succesful else
- * it returns NULL.
- */
+* _strduppop -	Return a pointer to a duplicated string
+* @s:			The string to be duplicated
+*
+* Return:		If successful, the address of the new string
+*				Else, it returns NULL.
+*/
+
 char *_strduppop(char *s)
 {
 	char *str;
