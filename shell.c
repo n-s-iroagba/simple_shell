@@ -26,7 +26,6 @@ int main(__attribute__((unused)) int ac, __attribute__((unused)) char **av,
 		printf("$ ");
 		fflush(stdout);
 		lineReturn = getline(&line, &lineCap, stdin);
-		
 		if (lineReturn == ULONG_MAX)
 			break;
 
